@@ -64,6 +64,7 @@
     justify-content: space-between;
     height: 360px;
     margin-top: 37px;
+    margin-bottom: 30px;
     list-style-type: none;
 
     @media (max-width: 768px) {
@@ -130,6 +131,9 @@
 
   &__phone {
     margin-bottom: 40px;
+    @media (max-width: 768px) {
+      margin-bottom: 8px;
+    }
     a {
       font-weight: 700;
       font-size: 24px;
