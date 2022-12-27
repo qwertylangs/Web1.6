@@ -1,0 +1,144 @@
+.modal {
+  position: fixed;
+  top: 0;
+  right: -520px;
+  width: 440px;
+  height: 100vh;
+
+  background-color: #fff;
+  padding: 40px 32px;
+  z-index: 20;
+  transition: all 0.5s;
+
+  @media (max-width: 540px) {
+    right: -540px;
+    display: none;
+    width: 100vw;
+    height: 100vh;
+    padding: 24px 16px;
+  }
+
+  &--feedback-active {
+    right: 0px;
+
+    @media (max-width: 540px) {
+      display: block;
+      top: 0;
+      left: 0;
+    }
+  }
+
+  &__title {
+    position: relative;
+    font-size: 24px;
+    line-height: 32px;
+    letter-spacing: -0.6px;
+    color: #1b1c21;
+
+    @media (max-width: 540px) {
+      margin-top: 90px;
+    }
+
+    &::before {
+      position: absolute;
+      left: -32px;
+      top: 50%;
+      -webkit-transform: translateY(-50%);
+      transform: translateY(-50%);
+      display: block;
+      width: 4px;
+      height: 40px;
+      border-radius: 5px;
+      background-color: #41f6d7;
+      content: '';
+    }
+  }
+
+  &__burger {
+    position: absolute;
+    top: 32px;
+    left: -64px;
+    @media (max-width: 540px) {
+      left: 16px;
+    }
+  }
+
+  &__input {
+    width: 376px;
+    height: 48px;
+    border: 1px solid #eaeaea;
+    border-radius: 8px;
+    padding: 16px;
+    margin-bottom: 16px;
+
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: -0.2px;
+    color: #1b1c21;
+
+    &:first-child {
+      margin-top: 24px;
+    }
+
+    &:focus {
+      border-color: transparent;
+      outline: 1px solid $green;
+    }
+
+    &::placeholder {
+      color: #b5b6bc;
+    }
+
+    @media (max-width: 540px) {
+      width: 100%;
+    }
+  }
+
+  &__message {
+    width: 376px;
+    height: 118px;
+    margin-bottom: 16px;
+    padding: 16px;
+    border: 1px solid #eaeaea;
+    border-radius: 8px;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: -0.2px;
+    color: #1b1c21;
+
+    &:focus {
+      border-color: transparent;
+      outline: 1px solid $green;
+    }
+
+    &::placeholder {
+      color: #b5b6bc;
+    }
+
+    @media (max-width: 540px) {
+      width: 100%;
+    }
+  }
+
+  &__info {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 16px;
+    color: #7e7e82;
+    text-align: justify;
+
+    span {
+      color: $pink;
+    }
+  }
+
+  &__submit {
+    display: block;
+    width: 136px;
+    margin-top: 23px;
+    margin-left: auto;
+  }
+}
+
+.modal-feedback {
+}

@@ -1,0 +1,153 @@
+.prices {
+  padding-top: 40px;
+
+  &__table {
+    display: block;
+    width: 100%;
+    margin-top: 24px;
+  }
+
+  &__head {
+    display: grid;
+    grid-template-columns: minmax(200px, 50%) minmax(50px, 20%) minmax(50px, 15%) minmax(119px, 15%);
+
+    padding: 0 24px;
+    margin: 0 32px;
+    margin-bottom: 16px;
+
+    span {
+      font-size: 14px;
+      line-height: 16px;
+      color: #7e7e82;
+      mix-blend-mode: normal;
+      opacity: 0.72;
+    }
+  }
+
+  &__table-name {
+    width: 50%;
+  }
+
+  &__table-cost {
+    width: 20%;
+  }
+
+  &__table-term {
+    width: 30%;
+  }
+
+  &__wrapper {
+    height: 324px;
+    height: 324px;
+
+    padding: 0 24px;
+    margin: 0 32px;
+    background: #ffffff;
+    border-radius: 6px;
+  }
+
+  &__item {
+    display: grid;
+    grid-template-columns: minmax(200px, 50%) minmax(50px, 20%) minmax(50px, 15%) minmax(119px, 15%);
+    align-items: center;
+
+    height: 64px;
+
+    border-bottom: 1px solid #eaeaea;
+
+    &:last-child {
+      border: none;
+    }
+
+    span:not(.prices__slider-subtitle) {
+      font-size: 14px;
+      line-height: 18px;
+      letter-spacing: 0.2px;
+      color: #1b1c21;
+    }
+  }
+
+  &__name {
+    display: inline;
+    vertical-align: middle;
+  }
+
+  &__order {
+    text-align: right;
+  }
+
+  &__slider-subtitle {
+    display: none;
+
+    font-size: 14px;
+    line-height: 19px;
+    color: #7e7e82;
+    mix-blend-mode: normal;
+    opacity: 0.72;
+  }
+
+  .subtitle {
+    padding-left: 32px;
+
+    @media (max-width: 1120px) {
+      padding-left: 24px;
+    }
+
+    @media (max-width: 450px) {
+      padding-left: 16px;
+      padding-right: 16px;
+    }
+  }
+}
+
+@media (max-width: 780px) {
+  .prices {
+    &__head {
+      display: none;
+    }
+    &__wrapper {
+      display: flex;
+      align-items: flex-start;
+      height: 200px;
+      padding: 0 16px;
+      margin: 0;
+      background: transparent;
+      border: none;
+      border-radius: 0;
+    }
+
+    &__item {
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      flex-shrink: 0;
+      overflow: hidden;
+
+      padding: 16px;
+      width: 260px;
+      height: 200px;
+
+      background: #ffffff;
+      border-radius: 6px;
+    }
+
+    &__name {
+      margin-bottom: 16px;
+    }
+
+    &__cost {
+      margin-bottom: 16px;
+    }
+
+    &__slider-subtitle {
+      display: block;
+    }
+
+    &__btn {
+      position: absolute;
+      right: 16px;
+      bottom: 16px;
+    }
+  }
+}

@@ -1,0 +1,94 @@
+@import '../libs/normalize';
+
+@import 'vars/variables';
+@import 'mixins/font-face';
+
+@import 'fonts';
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'TTLakes';
+}
+
+.body-hidden {
+  overflow: hidden;
+}
+
+.container {
+  margin-left: 320px;
+  transition: opacity 0.5s;
+  &--active {
+    opacity: 0.07;
+  }
+}
+
+@media (max-width: 1440px) {
+  .container {
+    margin: 0 auto;
+  }
+}
+
+main {
+  background: #f8f8f8;
+
+  @media (max-width: 1440px) {
+    margin-top: 88px;
+  }
+}
+
+.underlay {
+  display: none;
+  &--active {
+    display: block;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: 10;
+  }
+}
+.underlay-modals {
+  display: none;
+  &--active {
+    display: block;
+    position: fixed;
+    top: 0px;
+    left: -320px;
+    width: 100vw;
+    height: 100vh;
+    z-index: 10;
+
+    @media (max-width: 1440px) {
+      left: 0;
+      opacity: 0;
+    }
+  }
+}
+
+@import 'blocks/btn';
+@import 'blocks/burger';
+@import 'blocks/title';
+@import 'blocks/subtitle';
+@import 'blocks/link-forward';
+@import 'blocks/swiper';
+@import 'blocks/btn-action';
+
+@import 'blocks/sections/header';
+@import 'blocks/sections/promo';
+@import 'blocks/sections/menu';
+@import 'blocks/sections/brands';
+@import 'blocks/sections/technics';
+@import 'blocks/sections/prices';
+@import 'blocks/sections/info';
+@import 'blocks/sections/footer';
+@import 'blocks/sections/modal';
+
+@import 'blocks/media/promo-media';

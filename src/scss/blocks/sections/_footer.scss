@@ -1,0 +1,48 @@
+.footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  background-color: #f8f8f8;
+  padding: 83px 31px 21px;
+
+  @media (max-width: 780px) {
+    padding: 57px 24px 19px;
+  }
+
+  &__col-1,
+  &__col-2,
+  &__col-3 {
+    width: 32%;
+    font-size: 14px;
+    line-height: 16px;
+    color: #7e7e82;
+    mix-blend-mode: normal;
+    opacity: 0.72;
+  }
+
+  &__col-2 {
+    text-align: center;
+  }
+
+  &__col-3 {
+    text-align: right;
+  }
+
+  @media (max-width: 730px) {
+    & {
+      flex-wrap: wrap;
+    }
+
+    &__col-1,
+    &__col-2,
+    &__col-3 {
+      width: 100%;
+      text-align: center;
+    }
+
+    &__col-1,
+    &__col-2 {
+      margin-bottom: 16px;
+    }
+  }
+}

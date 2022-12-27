@@ -1,0 +1,57 @@
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 5;
+  display: none;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  min-height: 88px;
+  padding: 24px;
+  background-color: white;
+
+  @media (max-width: 1440px) {
+    .header {
+      display: flex;
+    }
+  }
+
+  &__float-left {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 20px;
+    width: 200px;
+  }
+
+  &__divider {
+    width: 2px;
+    height: 32px;
+    background: #eaeaea;
+    border-radius: 1px;
+  }
+
+  &__logo > a {
+    display: block;
+    height: 51px;
+  }
+
+  &__float-right {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 20px;
+    width: 300px;
+  }
+
+  &__btns {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+  }
+
+  &__btns .btn:nth-child(2) > img {
+    margin-top: 3px;
+  }
+}

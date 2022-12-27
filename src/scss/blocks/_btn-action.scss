@@ -1,0 +1,21 @@
+.btn-action {
+  width: 119px;
+  height: 32px;
+  padding: 4px 16px;
+
+  background: #ff3e79;
+  border: none;
+  border-radius: 16px;
+
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 24px;
+  letter-spacing: -0.15px;
+  text-transform: uppercase;
+  color: #ffffff;
+  cursor: pointer;
+
+  img {
+    margin-left: 13px;
+  }
+}

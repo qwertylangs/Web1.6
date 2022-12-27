@@ -1,0 +1,14 @@
+{
+    "singleQuote": true,
+    "jsxSingleQuote": true,
+    "arrowParens": "always",
+    "html.format.wrapAttributes": "force-aligned",
+    "max-len": ["error", 280, 2],
+    "printWidth": 180,
+    "tabWidth": 2,
+    "useTabs": false,
+    "editor.formatOnPaste": false,
+    "editor.formatOnSave": true
+
+}
+

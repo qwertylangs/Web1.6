@@ -1,0 +1,43 @@
+.info {
+  max-width: 421px;
+  margin: 32px 0 0 32px;
+
+  @media (max-width: 1120px) {
+    margin: 24px 24px 0;
+  }
+
+  @media (max-width: 780px) {
+    margin-top: 5px;
+  }
+
+  @media (max-width: 450px) {
+    margin-left: 16px;
+    margin-right: 16px;
+  }
+
+  &__descr {
+    margin-bottom: 16px;
+    text-align: justify;
+    font-size: 14px;
+    line-height: 20px;
+    letter-spacing: 0.2px;
+    color: #1b1c21;
+  }
+
+  &__link {
+    @media (max-width: 350px) {
+      width: 200px;
+    }
+    a {
+      font-weight: 600;
+      font-size: 16px;
+      line-height: 24px;
+      letter-spacing: -0.2px;
+      text-decoration: none;
+      color: #1b1c21;
+      img {
+        margin-left: 9px;
+      }
+    }
+  }
+}
