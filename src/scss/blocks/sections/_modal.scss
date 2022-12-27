@@ -51,6 +51,9 @@
       border-radius: 5px;
       background-color: #41f6d7;
       content: '';
+      @media (max-width: 540px) {
+        left: -16px;
+      }
     }
   }
 
