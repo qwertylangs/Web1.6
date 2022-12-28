@@ -20,7 +20,7 @@ linksMenu.forEach(link => {
         links.classList.remove('menu__link--active');
       }
     });
-    if (window.innerWidth <= 1440) {
+    if (window.innerWidth <= 1024) {
       menu.classList.toggle('menu--active');
       container.classList.toggle('container--active');
       underlay.classList.toggle('underlay--active');
@@ -158,7 +158,7 @@ forwardBrands.addEventListener('click', () => {
 const slider = document.querySelector('.swiper');
 let mySwiper;
 function mobileSlider() {
-  if (window.innerWidth <= 540 && slider.dataset.mobile === 'false') {
+  if (window.innerWidth <= 780 && slider.dataset.mobile === 'false') {
     mySwiper = new Swiper(slider, {
       slidesPerView: 'auto',
       spaceBetween: 16,
@@ -173,7 +173,7 @@ function mobileSlider() {
     });
     slider.dataset.mobile = 'true';
   }
-  if (window.innerWidth > 540 && slider.classList.contains('swiper-initialized')) {
+  if (window.innerWidth > 780 && slider.classList.contains('swiper-initialized')) {
     slider.dataset.mobile = 'false';
     mySwiper.destroy();
   }
@@ -226,7 +226,7 @@ const forwardPromo = document.querySelector('[data-forward="promo"]');
 const text = document.querySelector('.promo__text');
 const linksServices = document.querySelectorAll('.promo__link');
 forwardPromo.addEventListener('click', () => {
-  if (window.innerWidth < 1000) {
+  if (window.innerWidth < 1268) {
     text.classList.toggle('promo__text--active');
     forwardPromo.classList.toggle('link__forward--active');
     if (forwardPromo.classList.contains('link__forward--active')) {
@@ -266,7 +266,7 @@ forwardTech.addEventListener('click', () => {
 const slider1 = document.querySelector('.swiper1');
 let mySwiper1;
 function mobileSlider1() {
-  if (window.innerWidth <= 540 && slider1.dataset.mobile === 'false') {
+  if (window.innerWidth <= 780 && slider1.dataset.mobile === 'false') {
     // eslint-disable-next-line no-undef
     mySwiper1 = new Swiper(slider1, {
       slidesPerView: 'auto',
@@ -282,14 +282,14 @@ function mobileSlider1() {
     });
     slider1.dataset.mobile = 'true';
   }
-  if (window.innerWidth > 540 && slider1.classList.contains('swiper-initialized')) {
+  if (window.innerWidth > 780 && slider1.classList.contains('swiper-initialized')) {
     slider1.dataset.mobile = 'false';
     mySwiper1.destroy();
   }
 }
 mobileSlider1();
 window.addEventListener('resize', () => {
-  if (window.innerWidth < 540 && techCards.classList.contains('technics__cards--active')) {
+  if (window.innerWidth < 780 && techCards.classList.contains('technics__cards--active')) {
     techCards.classList.remove('technics__cards--active');
   }
   mobileSlider1();

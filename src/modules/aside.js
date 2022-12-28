@@ -16,7 +16,7 @@ linksMenu.forEach((link) => {
         links.classList.remove('menu__link--active');
       }
     });
-    if (window.innerWidth <= 1440) {
+    if (window.innerWidth <= 1024) {
       menu.classList.toggle('menu--active');
       container.classList.toggle('container--active');
       underlay.classList.toggle('underlay--active');

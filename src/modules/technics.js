@@ -16,7 +16,7 @@ const slider1 = document.querySelector('.swiper1');
 let mySwiper1;
 
 function mobileSlider1() {
-  if (window.innerWidth <= 540 && slider1.dataset.mobile === 'false') {
+  if (window.innerWidth <= 780 && slider1.dataset.mobile === 'false') {
     // eslint-disable-next-line no-undef
     mySwiper1 = new Swiper(slider1, {
       slidesPerView: 'auto',
@@ -35,7 +35,7 @@ function mobileSlider1() {
     slider1.dataset.mobile = 'true';
   }
 
-  if (window.innerWidth > 540 && slider1.classList.contains('swiper-initialized')) {
+  if (window.innerWidth > 780 && slider1.classList.contains('swiper-initialized')) {
     slider1.dataset.mobile = 'false';
     mySwiper1.destroy();
   }
@@ -44,7 +44,7 @@ function mobileSlider1() {
 mobileSlider1();
 
 window.addEventListener('resize', () => {
-  if (window.innerWidth < 540 && techCards.classList.contains('technics__cards--active')) {
+  if (window.innerWidth < 780 && techCards.classList.contains('technics__cards--active')) {
     techCards.classList.remove('technics__cards--active');
   }
   mobileSlider1();

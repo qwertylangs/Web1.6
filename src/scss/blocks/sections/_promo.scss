@@ -2,11 +2,7 @@
   background: #f8f8f8;
   padding: 42px 32px 0;
 
-  @media (max-width: 1440px) {
-    padding: 24px 32px 0;
-  }
-
-  @media (max-width: 1120px) {
+  @media (max-width: 1420px) {
     padding: 24px 24px 0;
   }
 
@@ -19,9 +15,6 @@
     align-items: center;
     justify-content: space-between;
     margin-bottom: 10px;
-    @media (max-width: 1120px) {
-      margin: 0;
-    }
 
     @media (max-width: 540px) {
       margin-bottom: -10px;

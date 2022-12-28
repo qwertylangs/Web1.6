@@ -29,7 +29,7 @@ body {
   }
 }
 
-@media (max-width: 1440px) {
+@media (max-width: 1024px) {
   .container {
     margin: 0 auto;
   }
@@ -38,7 +38,7 @@ body {
 main {
   background: #f8f8f8;
 
-  @media (max-width: 1440px) {
+  @media (max-width: 1024px) {
     margin-top: 88px;
   }
 }

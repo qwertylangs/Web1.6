@@ -1,4 +1,4 @@
-@media (max-width: 1440px) {
+@media (max-width: 1024px) {
   .header {
     display: flex;
   }
@@ -13,7 +13,7 @@
   }
 }
 
-@media (max-width: 1120px) {
+@media (max-width: 1420px) {
   .promo {
     &__title {
       &::before {

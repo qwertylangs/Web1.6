@@ -4,7 +4,7 @@ const text = document.querySelector('.promo__text');
 const linksServices = document.querySelectorAll('.promo__link');
 
 forwardPromo.addEventListener('click', () => {
-  if (window.innerWidth < 1000) {
+  if (window.innerWidth < 1268) {
     text.classList.toggle('promo__text--active');
     forwardPromo.classList.toggle('link__forward--active');
 
